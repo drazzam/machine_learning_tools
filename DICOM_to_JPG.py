@@ -1,4 +1,4 @@
-# Import Libraries
+# Import libraries
 import os
 from urllib.request import urlretrieve
 import pydicom
