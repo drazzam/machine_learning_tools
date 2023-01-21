@@ -41,3 +41,7 @@ while True:
                               columns=["sex", "age", "bmi", "hh_score", "mfisher", "htn", "smoke", "size_mm", "tx", "mrs_discharge", "last_mrs", "infarct", "monocytes"])
     prediction = model.predict(input_data)[0]
     print(f"Predicted Percentage for Delayed Cerebral Ischemia Is: % {prediction*100}")
+    
+    fig, ax = plt.subplots(figsize=(50, 50), dpi=300)
+    plot_tree(model, num_trees=0, rankdir='TB', ax=ax)
+    plt.show()
