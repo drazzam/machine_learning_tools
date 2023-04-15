@@ -45,7 +45,8 @@ for k in k_values:
     if accuracy > best_accuracy:
         best_accuracy = accuracy
         best_k = k
-best_k = 10
+        
+best_k = 10 #Select the highest KNN manually in case of all points have the same accuracy
 
 # Find the minimum number of samples per class in the training set
 min_samples_per_class = y_train.value_counts().min()
